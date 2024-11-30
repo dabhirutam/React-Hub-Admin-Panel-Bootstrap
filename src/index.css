@@ -1,0 +1,91 @@
+:root {
+    --bs-success-rgb: 60, 210, 165 !important;
+    --bs-body-color: #ffffff80 !important;
+    --bs-light-rgb: 197, 199, 202 !important;
+}
+
+body {
+    background: linear-gradient(180deg, #324650e6, #0d101b), url('./images/bg-cover.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bg-transparent {
+    background: transparent !important;
+}
+
+.fs-7{
+    font-size: 0.8rem !important;
+}
+.fs-8{
+    font-size: 0.5rem !important;
+}
+
+.frame{
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+
+.offcanvas-backdrop{display: none;}
+
+.accordion {
+    --bs-accordion-bg: transparent !important;
+    --bs-accordion-border-width: none !important;
+    --bs-accordion-active-color: #fff !important;
+    --bs-accordion-active-bg: transparent !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+    --bs-accordion-btn-padding-y: 8px !important;
+    --bs-accordion-btn-icon: url('./images/caret.png') !important;
+    --bs-accordion-btn-active-icon: url('./images/caret-active.png') !important;
+}
+
+.accordion .accordion-button:hover {
+    color: #fff !important;
+}
+
+.accordion .accordion-body {
+    transition: all 2s;
+}
+
+.accordion-button:not(.collapsed) i {
+    color: #3cd2a5 !important;
+}
+
+.accordion-item:not(:has(.accordion-body)) .accordion-button::after {
+    background-image: none;
+}
+
+.card{
+    height: 100% !important;
+}
+
+.btn-outline-success {
+    --bs-btn-color: #3cd2a5 !important;
+    --bs-btn-border-color: #3cd2a5 !important;
+    --bs-btn-hover-bg: #3cd2a5 !important;
+}
+
+::-webkit-scrollbar {
+    width: 0%;
+}
+
+svg g path {
+    fill: #ffffff80 !important;
+    &:hover{
+        fill: #ffffff96 !important;
+        cursor: pointer;
+    }
+}
+
+.zoom:hover{
+    background-color: #3cd2a5 !important;
+    color: #000 !important;
+}
+
+.activity-item:nth-child(odd) {
+    background-color: #ffffff10 !important;
+}
+
+canvas{
+    margin-left: auto !important;
+}
